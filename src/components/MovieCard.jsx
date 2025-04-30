@@ -9,7 +9,7 @@ const MovieCard = ({ movie }) => {
       <h2 className="movie-title">{movie.title}</h2>
       <p className="movie-genre">{movie.genre}</p>
       <p className="movie-description">{movie.description}</p>
-      <p className="movie-session">Session: {movie.sessionTime}</p>
+      <p className="movie-session">Час: {movie.sessionTime}</p>
       <Link to={`/booking/${movie.id}`} className="booking-button">
         Забронювати
       </Link>
