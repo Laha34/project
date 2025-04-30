@@ -45,7 +45,7 @@ export const movies = [
     description: "Гарфілд (Garfield) — лінивий, саркастичний кіт Гарфілд потрапляє у кумедні пригоди через свого господаря і собаку.",
     genre: "Сімейний",
     poster: "https://uaserial.com/images/serials/65/655d29b1d436d723293656.webp",
-    sessionTime: "13:00 3.05.2025",
+    sessionTime: "18:00 1.05.2025",
   },
   {
     id: 7,
