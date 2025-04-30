@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./CinemaHall.css";  // виправлений шлях до стилів
+import "./CinemaHall.css"; 
 import { BookingService } from "../services/BookingService";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MovieCard from "./MovieCard";
-import "./MovieList.css"; // Підключення стилів списку
+import "./MovieList.css"; 
 
 const MovieList = ({ movies }) => {
   const [searchTerm, setSearchTerm] = useState("");

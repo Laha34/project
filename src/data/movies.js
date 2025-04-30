@@ -1,4 +1,3 @@
-// Список фільмів
 export const movies = [
   {
     id: 1,
