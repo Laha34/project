@@ -1,0 +1,102 @@
+.cinema-hall {
+    padding: 20px;
+  }
+  
+  .seats-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 40px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .seat {
+    width: 40px;
+    height: 40px;
+    background-color: #7de28b; /* Вільні місця - зелений */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+  
+  .seat:hover {
+    background-color: #63c375;
+  }
+  
+  .seat.selected {
+    background-color: #4a90e2; /* Вибрані місця - синій */
+    color: white;
+  }
+  
+  .seat.booked {
+    background-color: #e74c3c; /* Заброньовані місця - червоний */
+    color: white;
+    cursor: not-allowed;
+  }
+  
+  .booking-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .booking-form input {
+    width: 250px;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+  }
+  
+  .confirm-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .confirm-button:hover {
+    background-color: #357ab8;
+  }
+  
+  /* --- АДАПТИВНІСТЬ для мобільних --- */
+  @media (max-width: 768px) {
+    .seats-grid {
+      grid-template-columns: repeat(6, 35px); /* менше місць в ряд */
+      gap: 8px;
+    }
+  
+    .seat {
+      width: 35px;
+      height: 35px;
+    }
+  
+    .booking-form input {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .seats-grid {
+      grid-template-columns: repeat(4, 30px); /* ще менше для мобілок */
+      gap: 6px;
+    }
+  
+    .seat {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .confirm-button {
+      width: 90%;
+    }
+  }
+  

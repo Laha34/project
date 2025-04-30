@@ -1,0 +1,21 @@
+.movie-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .search-input {
+    width: 60%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
